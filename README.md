@@ -1,0 +1,2 @@
+# wasmjsapp
+JavaScript project template.
