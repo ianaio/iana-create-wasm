@@ -12,14 +12,14 @@ if (process.argv.length >= 3) {
   }
 }
 
-const clone = spawn("git", ["clone", "https://github.com/ianaio/wasmjsapp.git", folderName]);
+const clone = spawn("git", ["clone", "https://github.com/ianaio/iana-create-wasm", folderName]);
 
 clone.on("close", code => {
   if (code !== 0) {
-    console.error("cloning the template failed!")
+    console.error("CLONING THE IANA SYSTEM RUST WASM TEMPLATE FAILED!")
     process.exit(code);
   } else {
-    console.log("🦀 Rust + 🕸 Wasm = ❤");
+    console.log("WELCOME THE WORLD OF IANA SYSTEMS. 🦀 RUST🕸 WASM IS NOW ON);
   }
 });
 
